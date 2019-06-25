@@ -12,33 +12,35 @@
 </head>
 
 <body onload="draw();">
-    <canvas id="canvas" width="600" height="600"></canvas>
-    <div class="actions">
-        <svg class="icon active" aria-hidden="true" id="brush">
-            <use xlink:href="#icon-bi"></use>
-        </svg>
-        <svg class="icon" aria-hidden="true" id="eraser">
-            <use xlink:href="#icon-xiangpi"></use>
-        </svg>
-        <svg class="icon" aria-hidden="true" id="clear">
-            <use xlink:href="#icon-shanchu"></use>
-        </svg>
-        <svg class="icon" aria-hidden="true" id="download">
+    <div>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <div class="actions">
+            <svg class="icon active" aria-hidden="true" id="brush">
+                <use xlink:href="#icon-bi"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true" id="eraser">
+                <use xlink:href="#icon-xiangpi"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true" id="clear">
+                <use xlink:href="#icon-shanchu"></use>
+            </svg>
+            <svg class="icon" aria-hidden="true" id="download">
                 <use xlink:href="#icon-baocun"></use>
             </svg>
-    </div>
-    <div>
-        <ol class="colors">
-            <li id="red"></li>
-            <li id="green"></li>
-            <li id="yellow"></li>
-            <li id="black"></li>
-        </ol>
-        <ol class="sizes">
-            <li id="thin"></li>
-            <li id="fat"></li>
-        </ol>
-    </div>
+        </div>
+        <div>
+            <ol class="colors">
+                <li id="red"></li>
+                <li id="green"></li>
+                <li id="yellow"></li>
+                <li id="black"></li>
+            </ol>
+            <ol class="sizes">
+                <li id="thin"></li>
+                <li id="fat"></li>
+            </ol>
+        </div>
+            <div class="cat"></div>
 </body>
 
 </html>

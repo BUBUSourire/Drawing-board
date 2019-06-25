@@ -4,6 +4,7 @@
 }
 body {
     overflow: hidden;
+    cursor: pointer;
 }
 ol,li {
     list-style: none;
@@ -15,11 +16,12 @@ ol,li {
     overflow: hidden;
  }
 #canvas {
-    background-color: #fff7ea;
+    background-color: #FFF5C2;
     display: block;  /* 此属性不添加，会有默认滚轮存在 */
     position: fixed;
     left: 0;
     top: 0;
+    cursor: Crosshair;
    
 }
 .actions {
@@ -40,7 +42,7 @@ ol,li {
 }
 .colors {
     position: fixed;
-    left: 28px;
+    left: 24px;
     top: 80px;
 }
 .colors li {
@@ -70,8 +72,8 @@ ol,li {
 }
 .sizes {
     position: fixed;
-    top: 80px;
-    right: 20px;
+    top: 220px;
+    left: 24px;
 }
 .sizes > li:first-child {
     width: 20px;
@@ -83,4 +85,39 @@ ol,li {
     height: 0;
     border-bottom: 5px solid black;
     margin-top: 20px;
+}
+.cat {
+    position: fixed;
+    left: 140px;
+    bottom: 12px;
+    width: 125px;
+    height: 100px;
+    background: url(../images/5c88740567a85.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.cat::before {
+    content: "";
+    position: fixed;
+    left: 80px;
+    bottom: 20px;
+    width: 55px;
+    height: 50px;
+    background: url(../images/5c88740567a85.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.cat::after {
+    content: "";
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 55px;
+    height: 50px;
+    background: url(../images/5c88740567a85.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
 }
