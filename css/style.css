@@ -1,1 +1,14 @@
-hi css
+* {
+    padding: 0;
+    margin: 0;
+}
+#canvas {
+    background-color: #fff7ea;
+    display: block;  /* 此属性不添加，会有默认滚轮存在 */
+   
+}
+.actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
