@@ -7,21 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
-    <script src="//at.alicdn.com/t/font_1260679_8jw5q59e4ct.js"></script>
+    <script src="https://at.alicdn.com/t/font_1260679_7272qp4w8y9.js"></script>
     <title>画板</title>
 </head>
 
 <body onload="draw();">
     <canvas id="canvas" width="600" height="600"></canvas>
     <div class="actions">
-        <svg class="icon" aria-hidden="true">
-            <use xlink:href="icon-xiangpi"></use>
+        <svg class="icon active" aria-hidden="true" id="brush">
+            <use xlink:href="#icon-bi"></use>
         </svg>
-        <svg class="icon" aria-hidden="true">
-                <use xlink:href="icon-bi"></use>
+        <svg class="icon" aria-hidden="true" id="eraser">
+            <use xlink:href="#icon-xiangpi"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true" id="clear">
+            <use xlink:href="#icon-shanchu"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true" id="download">
+                <use xlink:href="#icon-baocun"></use>
             </svg>
-        <button id="eraser">橡皮擦</button>
-        <button id="brush">画笔</button>
+    </div>
+    <div>
+        <ol class="colors">
+            <li id="red"></li>
+            <li id="green"></li>
+            <li id="yellow"></li>
+            <li id="black"></li>
+        </ol>
+        <ol class="sizes">
+            <li id="thin"></li>
+            <li id="fat"></li>
+        </ol>
     </div>
 </body>
 
